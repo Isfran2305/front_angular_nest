@@ -9,6 +9,7 @@ import { AppLayoutModule } from './layout/app.layout.module';
 import { CategoriaService } from './inventario/services/categoria.service';
 import { InventarioModule } from './inventario/inventario.module';
 import { TableModule } from 'primeng/table';
+import { ProductoService } from './inventario/services/producto.service';
 
 
 
@@ -26,7 +27,8 @@ import { TableModule } from 'primeng/table';
     InventarioModule
   ],
   providers: [
-    CategoriaService
+    CategoriaService,
+    ProductoService
   ]
 })
 export class AdminModule { }
